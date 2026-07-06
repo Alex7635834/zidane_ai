@@ -5,3 +5,4 @@ optuna
 scikit-learn
 scipy
 xgboost
+kagglehub

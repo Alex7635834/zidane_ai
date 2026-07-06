@@ -10,6 +10,9 @@
 ## ETAPE 2 qui a gagné quoi au moment du match
 
 import pandas as pd
+from retrieval import retrieve_team_data
+
+retrieve_team_data()
 
 results = pd.read_csv("../data/results.csv")
 former_name = pd.read_csv("../data/former_names.csv")

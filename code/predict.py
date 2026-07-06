@@ -3,11 +3,15 @@ import numpy as np
 import joblib
 import sys
 from traitement_clean import run_pipeline
+from retrieval import retrieve_team_data 
 from scipy.stats import poisson
+from pathlib import Path
 
-model = joblib.load('../models/model.pkl')
-model_home = joblib.load('../models/model_home.pkl')
-model_away = joblib.load('../models/model_away.pkl')
+BASE_DIR = Path(__file__).parent.parent  # remonte de code/ à zidane_ai/
+
+model = joblib.load(BASE_DIR / "models/model.pkl")
+model_home = joblib.load(BASE_DIR / "models/model_home.pkl")
+model_away = joblib.load(BASE_DIR / "models/model_away.pkl")
 
 features = [
     'neutral', 'year', 'tournament_score',
@@ -19,7 +23,12 @@ features = [
     'h2h_home_wins', 'h2h_away_wins', 'h2h_draw', 'h2h_diff'
 ]
 
+
+
 def predict(home_team, away_team, neutral=True):
+
+    retrieve_team_data()  # Récupération des données si nécessaire
+
     results = pd.read_csv("../data/results.csv")
     
     results = results[
