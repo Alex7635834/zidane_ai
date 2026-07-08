@@ -167,7 +167,7 @@ python predict.py Mexico Ecuador
 ## Résultats
 
 Après simulation de monte-carlo, (predict_winner.py) voici les résultats du modèle.
-
+```bash
 === Sur 20 000 simulations ===
 
 France          :  20.0% de titres
@@ -195,6 +195,8 @@ France - England - Argentina : 1.82%
 Spain - Argentina - Morocco : 1.77%
 Spain - England - Morocco : 1.68%
 France - Argentina - Spain : 1.65%
+
+```
 
 ## Auteur
 
