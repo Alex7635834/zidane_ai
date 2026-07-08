@@ -164,6 +164,38 @@ python predict.py Mexico Ecuador
 
 ---
 
+## Résultats
+
+Après simulation de monte-carlo, (predict_winner.py) voici les résultats du modèle.
+
+=== Sur 20 000 simulations ===
+
+France          :  20.0% de titres
+Spain           :  19.6% de titres
+Argentina       :  19.5% de titres
+England         :  14.4% de titres
+Morocco         :  11.7% de titres
+Norway          :   3.9% de titres
+Belgium         :   3.6% de titres
+Portugal        :   3.0% de titres
+Colombia        :   1.9% de titres
+Switzerland     :   1.8% de titres
+Egypt           :   0.5% de titres
+United States   :   0.1% de titres
+
+=== Podiums (champion, finaliste, troisième) les plus fréquents ===
+
+Spain - Argentina - France : 2.42%
+Spain - England - France : 2.17%
+France - England - Spain : 2.00%
+Argentina - France - England : 2.00%
+Argentina - Spain - France : 1.98%
+France - Argentina - England : 1.90%
+France - England - Argentina : 1.82%
+Spain - Argentina - Morocco : 1.77%
+Spain - England - Morocco : 1.68%
+France - Argentina - Spain : 1.65%
+
 ## Auteur
 
 Ruiz Alexandre - élève ingénieur à l'école des Mines de Douai
